@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   mode: "development",
-  entry: './src/counter_app_with_jsx.js',
+  entry: './src/counter_app_with_class_component.js',
   output: {
     path: path.resolve(__dirname, "public"),
     filename: 'app.js'
