@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/counter_app_with_jsx.js");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -229,15 +229,15 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 
 /***/ }),
 
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/counter_app_with_jsx.js":
+/*!*************************************!*\
+  !*** ./src/counter_app_with_jsx.js ***!
+  \*************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar element = document.getElementById('react-area'); //const template = React.createElement('h1', null, 'Hello React World..');\n\nvar template = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", null, \"Hello World\");\nreact_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(template, element);\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar element = document.getElementById('react-area'); //const template = React.createElement('h1', null, 'Hello React World..');\n\nvar counter = 0;\n\nvar addOne = function addOne() {\n  counter += 1;\n  render();\n};\n\nvar minusOne = function minusOne() {\n  counter -= 1;\n  render();\n};\n\nvar Reset = function Reset() {\n  counter = 0;\n  render();\n};\n\nvar render = function render() {\n  var template = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"div\", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h1\", null, \"Counter App\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"hr\", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"h2\", null, \"Counter: \", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"strong\", null, counter)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    onClick: addOne\n  }, \"AddOne\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    onClick: minusOne\n  }, \"MinusOne\"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(\"button\", {\n    onClick: Reset\n  }, \"Reset\"));\n  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(template, element);\n};\n\nrender();\n\n//# sourceURL=webpack:///./src/counter_app_with_jsx.js?");
 
 /***/ })
 
