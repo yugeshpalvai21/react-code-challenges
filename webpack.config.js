@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   mode: "development",
-  entry: './src/todo_app_in_single_file.js',
+  entry: './src/ToDoApp/app.js',
   output: {
     path: path.resolve(__dirname, "public"),
     filename: 'app.js'
