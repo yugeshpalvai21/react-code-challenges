@@ -2,7 +2,7 @@ var path = require('path');
 
 module.exports = {
   mode: "development",
-  entry: './src/javascript_es6_features.js',
+  entry: './src/redux-basic.js',
   output: {
     path: path.resolve(__dirname, "public"),
     filename: 'app.js'
