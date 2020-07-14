@@ -7,9 +7,14 @@
   "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "server": "live-server public/"
+    "server": "live-server public/",
+    "build": "webpack --watch"
   },
   "dependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "webpack": "^4.43.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
   }
 }
