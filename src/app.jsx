@@ -1,48 +1,62 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// let counter = 0;
 
-class Counter extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            counter: 0
-        }
-        this.addOne = this.addOne.bind(this);
-        this.minusOne = this.minusOne.bind(this);
-        this.reset = this.reset.bind(this);
-    }
+// function addCounter() {
+//     counter += 1
+// }
 
-    addOne() {
-        this.setState((prevState) => {
-            return {
-                counter: prevState.counter + 1
-            }
-        });
+// console.log('initial counter is ', counter);
+
+// addCounter();
+
+// console.log('counter after adding one ', counter);
+
+// counter = 'sanka.. override';
+
+// console.log('change counter on global scope ', counter);
+
+
+// CLOSURES EXAMPLE
+
+// function outerScope() {
+//     let counter = 0;
+//     return function() {
+//         counter += 1;
+//         return counter;
+//     }
+// }
+
+// const addOne = outerScope();
+
+// let counter = addOne();
+
+// console.log('value of counter is ', counter);
+
+// counter = addOne();
+
+// console.log('after changing value in counter ', counter);
+
+// counter -= 1;
+
+// console.log('after changing value in counter ', counter);
+
+// counter = addOne();
+
+// console.log('after changing value in counter ', counter);
+
+
+//CLOSURES MORE EXAMPLE
+
+function outer() {
+    var b = 10;
+    function inner() {
+        
+            var a = 20; 
+            console.log(a+b);
     }
-    minusOne() {
-        this.setState((prevState) => {
-            return {
-                counter: prevState.counter - 1
-            }
-        });
-    }
-    reset() {
-        this.setState(() => {
-            return {
-                counter: 0
-            }
-        })
-    }
-    render() {
-        return (
-            <div>
-                <h1>Counter: {this.state.counter}</h1>
-                <button onClick={this.addOne}>Add one (+1)</button>
-                <button onClick={this.minusOne}>Minus One (-1)</button>
-                <button onClick={this.reset}>Reset</button>
-            </div>
-        )
-    }
+    return inner;
 }
+var X = outer(); 
+console.dir(X); //use console.dir() instead of console.log()
 
-ReactDOM.render(<Counter />, document.getElementById('app'));
+
+
