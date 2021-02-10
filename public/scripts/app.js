@@ -1,10 +1,20 @@
+"use strict";
+
 var rootElement = document.getElementById("app");
 
-var template = (
-  <div>
-    <h1>This Is Header</h1>
-    <p>This Is Description Of Page</p>
-  </div>
+var template = React.createElement(
+  "div",
+  null,
+  React.createElement(
+    "h1",
+    null,
+    "This Is Header"
+  ),
+  React.createElement(
+    "p",
+    null,
+    "This Is Description Of Page"
+  )
 );
 
 ReactDOM.render(template, rootElement);
