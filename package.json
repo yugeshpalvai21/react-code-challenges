@@ -1,0 +1,9 @@
+{
+  "name": "react-play",
+  "version": "1.0.0",
+  "description": "react playground",
+  "main": "index.js",
+  "repository": "https://github.com/yugeshpalvai21/react-play.git",
+  "author": "Yugesh Palvai <yugeshpalvai21@gmail.com>",
+  "license": "MIT"
+}

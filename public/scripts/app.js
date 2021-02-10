@@ -1,9 +1,10 @@
 var rootElement = document.getElementById("app");
 
-var template = React.createElement("h1", {
-    align: "center",
-    id: "dev",
-    className: "app"
-  }, "hello world");
+var template = (
+  <div>
+    <h1>This Is Header</h1>
+    <p>This Is Description Of Page</p>
+  </div>
+);
 
 ReactDOM.render(template, rootElement);
